@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Service>
+    <ServiceNo>1</ServiceNo>
+    <ServiceDesc>股票服务</ServiceDesc>
+    <Funs>
+      <Fund>
+        <FundID>1001</FundID>
+        <FundDesc>取股票基本信息</FundDesc>
+        <Input>
+          <InnerCode type="String"></InnerCode>
+        </Input>
+        <Out>
+          <StockBaseInfo type="LJC.Com.StockService.Contract.StockBaseInfo"></StockBaseInfo>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>10011</FundID>
+        <FundDesc>取股票基本信息</FundDesc>
+        <Input>
+          <InnerCode type="String[]"></InnerCode>
+        </Input>
+        <Out>
+          <StockBaseInfoList type="List~LJC.Com.StockService.Contract.StockBaseInfo"></StockBaseInfoList>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>1002</FundID>
+        <FundDesc>取简单的股票信息</FundDesc>
+        <Input>
+          <InnerCode type="String"></InnerCode>
+        </Input>
+        <Out>
+          <StockSimpleInfo type="LJC.Com.StockService.Contract.StockSimpleInfo"></StockSimpleInfo>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>10021</FundID>
+        <FundDesc>取简单的股票信息</FundDesc>
+        <Input>
+          <InnerCode type="String[]"></InnerCode>
+        </Input>
+        <Out>
+          <StockSimpleInfoList type="List~LJC.Com.StockService.Contract.StockSimpleInfo"></StockSimpleInfoList>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>1003</FundID>
+        <FundDesc>取所有的股票基本信息</FundDesc>
+        <Input>
+        </Input>
+        <Out>
+          <StockBaseInfoList type="List~LJC.Com.StockService.Contract.StockBaseInfo"></StockBaseInfoList>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>1004</FundID>
+        <FundDesc>取所有的股票简单信息</FundDesc>
+        <Input>
+        </Input>
+        <Out>
+          <StockSimpleInfo type="List~LJC.Com.StockService.Contract.StockSimpleInfo"></StockSimpleInfo>
+        </Out>
+      </Fund>
+
+      <Fund>
+        <FundID>1005</FundID>
+        <FundDesc>取股票历史日行情信息</FundDesc>
+        <Input>
+          <GetHisDayQuoteRequest type="LJC.Com.StockService.Contract.GetHisDayQuoteRequest"></GetHisDayQuoteRequest>
+        </Input>
+        <Out>
+          <StockQuoteList type="List~LJC.Com.StockService.Contract.StockSimpleInfo.StockQuote"></StockQuoteList>
+        </Out>
+      </Fund>
+
+      <Fund>
+        <FundID>1006</FundID>
+        <FundDesc>取股票历史日行情信息</FundDesc>
+        <Input>
+          <GetHisDayQuoteSpanRequest type="LJC.Com.StockService.Contract.GetHisDayQuoteRequest"></GetHisDayQuoteSpanRequest>
+        </Input>
+        <Out>
+          <StockQuoteList type="List~LJC.Com.StockService.Contract.StockSimpleInfo.StockQuote"></StockQuoteList>
+        </Out>
+      </Fund>
+
+      <Fund>
+        <FundID>1007</FundID>
+        <FundDesc>取股票最新价</FundDesc>
+        <Input>
+          <InnerCode type="string"></InnerCode>
+        </Input>
+        <Out>
+          <StockRealQuote type="LJC.Com.StockService.Contract.StockRealQuote"></StockRealQuote>
+        </Out>
+      </Fund>
+
+      <Fund>
+        <FundID>1008</FundID>
+        <FundDesc>取指数最新价</FundDesc>
+        <Input>
+          <IndexCodes type="string[]"></IndexCodes>
+        </Input>
+        <Out>
+          <StockQuoteList type="List~LJC.Com.StockService.Contract.StockQuote"></StockQuoteList>
+        </Out>
+      </Fund>
+
+      <Fund>
+        <FundID>1009</FundID>
+        <FundDesc>取所有基金基础信息</FundDesc>
+        <Input></Input>
+        <Out>
+          <FundBaseInfoList type="List~LJC.Com.StockService.Contract.FundBaseInfo"></FundBaseInfoList>
+        </Out>
+      </Fund>
+
+      <Fund>
+        <FundID>1010</FundID>
+        <FundDesc>取基金基础信息</FundDesc>
+        <Input>
+          <InnerCode type="string"></InnerCode>
+        </Input>
+        <Out>
+          <FundBaseInfo type="LJC.Com.StockService.Contract.FundBaseInfo"></FundBaseInfo>
+        </Out>
+      </Fund>
+
+       <Fund>
+        <FundID>1011</FundID>
+        <FundDesc>批量取股票最新价</FundDesc>
+        <Input>
+          <InnerCode type="string[]"></InnerCode>
+        </Input>
+        <Out>
+          <StockRealQuoteList type="List~LJC.Com.StockService.Contract.StockRealQuote"></StockRealQuoteList>
+        </Out>
+      </Fund>
+
+       <Fund>
+        <FundID>1012</FundID>
+        <FundDesc>取股票分时线数据</FundDesc>
+        <Input>
+          <InnerCode type="string"></InnerCode>
+        </Input>
+        <Out>
+          <StockQuoteList type="List~LJC.Com.StockService.Contract.StockSimpleInfo.StockQuote"></StockQuoteList>
+        </Out>
+      </Fund>
+      
+      <Fund>
+        <FundID>9000</FundID>
+        <FundDesc>是否开盘</FundDesc>
+        <Input>
+          <dt type="DateTime"></dt>
+        </Input>
+        <Out>
+          <isopen type="bool"></isopen>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>9001</FundID>
+        <FundDesc>下一个交易日期</FundDesc>
+        <Input>
+          <dt type="DateTime"></dt>
+        </Input>
+        <Out>
+          <NextTradeDate type="DateTime"></NextTradeDate>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>9002</FundID>
+        <FundDesc>下一次开盘时间</FundDesc>
+        <Input>
+          <dt type="DateTime"></dt>
+        </Input>
+        <Out>
+          <NextOpenTime type="DateTime"></NextOpenTime>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>9003</FundID>
+        <FundDesc>上一次收盘时间</FundDesc>
+        <Input>
+          <dt type="DateTime"></dt>
+        </Input>
+        <Out>
+          <LastCloseTime type="DateTime"></LastCloseTime>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>9004</FundID>
+        <FundDesc>上一个交易日</FundDesc>
+        <Input>
+          <dt type="DateTime"></dt>
+        </Input>
+        <Out>
+          <LastTradeDate type="DateTime"></LastTradeDate>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>9005</FundID>
+        <FundDesc>某月份交易日列表</FundDesc>
+        <Input>
+          <GetCurrMonthTradeDayRequest type="LJC.Com.StockService.Contract.GetCurrMonthTradeDayRequest">
+            <Year type="Int"></Year>
+            <Mon type="Int"></Mon>
+          </GetCurrMonthTradeDayRequest>
+        </Input>
+        <Out>
+          <DateList type="List~DateTime"></DateList>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>9006</FundID>
+        <FundDesc>设置交易日</FundDesc>
+        <Input>
+          <SetTradeDateRequest type="LJC.Com.StockService.Contract.SetTradeDateRequest">
+            <Date type="DateTime"></Date>
+            <CanTrade type="Bool"></CanTrade>
+          </SetTradeDateRequest>
+        </Input>
+        <Out>
+          <SetTradeDate type="Bool"></SetTradeDate>
+        </Out>
+      </Fund>
+      <Fund>
+        <FundID>9009</FundID>
+        <FundDesc>交易状态信息</FundDesc>
+        <Input>
+          <Date type="DateTime"></Date>
+        </Input>
+        <Out>
+          <TradeStatusInfo type="LJC.Com.StockService.Contract.TradeStatusInfo"></TradeStatusInfo>
+        </Out>
+      </Fund>
+    </Funs>
+  </Service>
+</Services>
