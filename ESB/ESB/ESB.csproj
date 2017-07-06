@@ -39,19 +39,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="LJC.Com.LogService.Contract">
-      <HintPath>..\..\..\..\GitHub\ljc.netlog\LJC.Com.LogService\LJC.Com.LogService.Contract\bin\Release\LJC.Com.LogService.Contract.dll</HintPath>
+      <HintPath>..\..\..\ljc.netlog\LJC.Com.LogService\LJC.Com.LogService.Contract\bin\Release\LJC.Com.LogService.Contract.dll</HintPath>
     </Reference>
     <Reference Include="LJC.FrameWork, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\GitHub\LJC.FrameWork\LJC.FrameWork.SOA\bin\Release\LJC.FrameWork.dll</HintPath>
+      <HintPath>..\..\..\LJC.FrameWork\LJC.FrameWork.SOA\bin\Release\LJC.FrameWork.dll</HintPath>
     </Reference>
     <Reference Include="LJC.FrameWork.Net, Version=2.0.5574.41408, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\GitHub\LJC.FrameWork\LJC.FrameWork.SOA\bin\Release\LJC.FrameWork.Net.dll</HintPath>
+      <HintPath>..\..\..\LJC.FrameWork\LJC.FrameWork.SOA\bin\Release\LJC.FrameWork.Net.dll</HintPath>
     </Reference>
     <Reference Include="LJC.FrameWork.SOA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\GitHub\LJC.FrameWork\LJC.FrameWork.SOA\bin\Release\LJC.FrameWork.SOA.dll</HintPath>
+      <HintPath>..\..\..\LJC.FrameWork\LJC.FrameWork.SOA\bin\Release\LJC.FrameWork.SOA.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
