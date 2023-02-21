@@ -14,10 +14,11 @@ namespace ESBLocalServiceTest
             //{
             //    new LJC.FrameWork.SOA.WebMapper
             //    {
-            //        LocalHost="http://127.0.0.1:83/",
-            //        VirRoot="quancheng"
+            //        MappingPort=8082,
+            //        MappingRoot=string.Empty,
+            //        TragetWebHost="http://127.0.0.1:83"
             //    }
-            //}) ;
+            //});
 
             TestESBEervice service = new TestESBEervice();
             service.LoginSuccess += new Action(() =>
