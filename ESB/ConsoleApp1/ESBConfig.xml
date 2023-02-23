@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<ESBConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ESBServer>127.0.0.1</ESBServer>
+  <ESBPort>20000</ESBPort>
+  <IsSecurity>false</IsSecurity>
+  <AutoStart>true</AutoStart>
+  <MaxClientCount>5</MaxClientCount>
+  <ESBServerConfigItems>
+    <ESBServerConfigItem>
+      <ESBServer>127.0.0.1</ESBServer>
+      <ESBPort>20001</ESBPort>
+      <IsSecurity>false</IsSecurity>
+      <AutoStart>true</AutoStart>
+      <MaxClientCount>2</MaxClientCount>
+    </ESBServerConfigItem>
+  </ESBServerConfigItems>
+</ESBConfig>
