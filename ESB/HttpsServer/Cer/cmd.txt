@@ -1,0 +1,2 @@
+openssl req -newkey rsa:2048 -nodes -keyout client.key -x509 -days 3650 -out client.cer
+openssl pkcs12 -export -in client.cer -inkey client.key -out client.pfx

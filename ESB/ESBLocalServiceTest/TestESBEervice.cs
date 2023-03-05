@@ -9,7 +9,7 @@ namespace ESBLocalServiceTest
     public class TestESBEervice : LJC.FrameWork.SOA.ESBService
     {
         public TestESBEervice()
-            : base(101, true, false)
+            : base(102, true, false)
         {
         }
 
