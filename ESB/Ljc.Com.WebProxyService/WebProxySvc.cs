@@ -16,6 +16,7 @@ namespace Ljc.Com.WebProxyService
         protected override void OnError(Exception e)
         {
             LJC.FrameWork.LogManager.LogHelper.Instance.Error("服务出错", e);
+            base.OnError(e);
         }
 
         public override object DoResponse(int funcId, byte[] Param, string clientid)
