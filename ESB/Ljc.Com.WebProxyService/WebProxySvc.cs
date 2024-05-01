@@ -19,13 +19,13 @@ namespace Ljc.Com.WebProxyService
             base.OnError(e);
         }
 
-        public override object DoResponse(int funcId, byte[] Param, string clientid)
+        public override object DoResponse(int funcId, byte[] Param, string clientid,Dictionary<string,string> header)
         {
             //var str = LJC.FrameWork.EntityBuf.EntityBufCore.DeSerialize<string>(Param);
             //Console.WriteLine("收到消息:" + str);
             //return funcId + ":" + str;
 
-            return base.DoResponse(funcId, Param, clientid);
+            return base.DoResponse(funcId, Param, clientid, header);
         }
     }
 }
